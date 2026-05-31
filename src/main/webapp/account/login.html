@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/script.js"></script>
+</head>
+
+<body>
+
+
+	<header class="header">
+		<div class="logo-title">
+			<img src="../images/logo.png" class="logo">
+			<h1>SRCTC</h1>
+		</div>
+	</header>
+
+	<nav>
+		<a href="../index.jsp">Home</a>
+		 <a href="../train/book-ticket.jsp">Train</a>
+		<a href="#">Hotels</a>
+		 <a href="#">Meals</a>
+		  <a href="#">Holidays</a>
+		<a href="login.html">My Account</a>
+		
+
+	</nav>
+
+	<section class="main">
+		<h2>Login</h2>
+		<p id="message"></p>
+
+		<form action="login.jsp" method="post">
+			<label>Email:</label><br> <input type="text" name="email"><br>
+			<br> <label>Password:</label><br> <input type="password"
+				name="password"><br> <br>
+
+			<button type="submit">Login</button>
+		</form>
+
+		<p>
+			Don't have an account? <a href="register.html">Register</a>
+		</p>
+	</section>
+	<script>
+		window.onload = function() {
+			const params = new URLSearchParams(window.location.search);
+			const msg = params.get("msg");
+
+			if (msg === "error") {
+				document.getElementById("message").innerText = "Invalid Email or Password!";
+				document.getElementById("message").style.color = "red";
+			}
+		};
+	</script>
+	<footer>
+		<p>© 2026 SRCTC</p>
+	</footer>
+
+</body>
+</html>
