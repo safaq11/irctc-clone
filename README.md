@@ -1,5 +1,5 @@
 # IRCTC Clone Project
-
+A railway reservation web application developed using Java, JSP, JDBC, PostgreSQL, HTML, CSS, and JavaScript.
 ## Overview
 
 IRCTC Clone is a web-based railway ticket booking application developed using Java, JSP, HTML, CSS, JavaScript, JDBC, and PostgreSQL. The project replicates basic functionalities of the IRCTC railway reservation system, allowing users to register, log in, book tickets, check PNR status, view booking history, and manage their accounts.
